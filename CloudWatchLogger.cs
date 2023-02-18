@@ -84,8 +84,8 @@ namespace AWSCloudWatchLoggingWithAWSSDK
                 var message = JsonConvert.SerializeObject(
                 new
                 {
-                    Title = "abc",
-                    Desc = "Hello"
+                    Title = title,
+                    Desc = description
                 });
 
                 _ = await _client.PutLogEventsAsync(new PutLogEventsRequest()
@@ -108,8 +108,8 @@ namespace AWSCloudWatchLoggingWithAWSSDK
                 var message = JsonConvert.SerializeObject(
                 new
                 {
-                    Title = "abc",
-                    Desc = "Hello",
+                    Title = title,
+                    Desc = description,
                     Object = data
                 });
 
