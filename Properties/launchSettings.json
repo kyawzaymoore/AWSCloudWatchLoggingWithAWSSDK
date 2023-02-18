@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AWSCloudWatchLoggingWithAWSSDK": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "AWS_PROFILE": "default"
+      }
+    }
+  }
+}
